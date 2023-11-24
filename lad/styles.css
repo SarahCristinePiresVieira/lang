@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+.jumbotron {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('consul.png'); 
+    background-size: cover;
+    background-position-y: 20%;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+    padding: 100px 0;
+    transition: 1s ease-in-out;
+}
+@keyframes entrada{
+    0%{
+        left: -50%;
+        opacity: 0%;
+    }
+    100%{
+        left: 0%;
+        opacity: 100%;
+    }
+}
+.jumbotron p{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.jumbotron p,.jumbotron-body h1{
+    position: relative;
+    transition: 1s ease-in-out;
+    animation-name: entrada;
+    animation-duration: 2s;
+}
+
+h1{
+    font-family: 'Vina Sans', sans-serif;
+}
+h2 {
+    color: #333;
+}
+
+.blog{
+    text-align:center ;
+   
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.ver{
+    background-color: #DF2727;
+    height: 200px;
+    
+}
+
+.card-body{
+    box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.306);
+    transition: 1s ease-in-out;
+}
+.card-body p{
+    animation-name: entrada;
+    animation-duration: 1s;
+}
+.container2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+.container2 section{
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col-md-3 img{
+    width: 250px;
+    border-radius: 10px;
+}
+.container2 .col-md-3{
+    background-color: #1e90ff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 34px 34px 20px -30px rgba(0, 0, 0, 0.306);
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+.container2 .col-md-3:hover{
+    box-shadow: 34px 34px 20px -30px rgba(0, 0, 0, 0.498);
+    transition: 0.4s ease-in-out;
+}
+
+.formlogin{
+    width: 300px;
+    margin-left: 480px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formlogin img{
+    width: 180px;
+    margin-left: 50px;
+}
+
+.calculadora {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.calculadora h1 {
+    color: #333;
+}
+
+.calculadora label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.calculadora input[type="number"] {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.calculadora button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calculadora button:hover {
+    background-color: #0056b3;
+}
+
+#totalDespesas {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.formimc,  #formdois{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #formdois{
+    display: none;
+  }
+  .tit {
+    font-size: 23px;
+    margin-bottom: 20px;
+   text-align: center;
+   
+  }
+  .taxa, .capital, .tempo, .taxa2, .capital2, .tempo2{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #ccc;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .enviar {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #85ece1;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  #texto, #texto2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  
+
+   #formdois, .formimc{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+
+   #formulario{
+    display: none;
+   }
+   .btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: rgb(22, 228, 225);
+   }
+   
+   .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .btn::after {
+    background-color: #1ae9de;
+   }
+   
+   .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+
+   .env{
+    width: 100%;
+    text-align: center;
+   }
+
+.acessar
+    button {
+        font-size: 17px;
+        padding: 0.5em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background: #1e90ff;
+        color: white;
+        border-radius: 4px;
+       }
+       
+       button:hover {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+       }
+       
+       button:active {
+        transform: translate(0em, 0.2em);
+       }
+       
+.footer{
+    text-align: center;
+}
